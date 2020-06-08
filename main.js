@@ -31,16 +31,16 @@ replaceAllButton.addEventListener("click",function(){
    
     for(let rowIndex = 0; rowIndex<rowElements.length;rowIndex++){
 
-    let myVariable = getCellElements(rowElements[rowIndex])
-     for(let cellIndex = 0; cellIndex<myVariable.length; cellIndex++){
-        if(myVariable[cellIndex].innerHTML.includes(userInput)){
+    let findChange = getCellElements(rowElements[rowIndex])
+     for(let cellIndex = 0; cellIndex<findChange.length; cellIndex++){
+        if(findChange[cellIndex].innerHTML.includes(userInput)){
             
                
-                let replaceThis = myVariable[cellIndex].innerHTML.replace(userInput,substitute)
+                let replaceThis = findChange[cellIndex].innerHTML.replace(userInput,substitute)
                 
                 
                 
-                myVariable[cellIndex].innerHTML = replaceThis
+                findChange[cellIndex].innerHTML = replaceThis
                
                
             
